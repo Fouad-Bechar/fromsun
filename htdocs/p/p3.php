@@ -44,7 +44,7 @@ $nom = $_SESSION['nom1'];
                 i++;
                 setTimeout(typeWriter, 100);
             } else if (j < text1.length) {
-                document.getElementById("demoo1").innerHTML += text1.charAt(j);
+                document.getElementById( "demoo1").innerHTML += text1.charAt(j);
                 j++;
                 setTimeout(typeWriter, 100);
             } else {

@@ -80,6 +80,7 @@ $data = $req->fetch();
                </div>
 
       <div class="title">
+     <!--<div style="margin-left:auto; margin-right: auto; display: block;"> <img  src="m/webp1.webp" alt="image01"/> </div>-->
       <span style="font-weight: bold; font-size: 25px; text-align: center; line-height: 80px; color: gold; user-select: none">Change Profile</span>
       </div> </div>
       <form class="frm1" action="y/p2" method="POST">

@@ -7,11 +7,8 @@ body {
   background-color: lightblue;
   background-image: url("../m/image0.webp");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 #bt0 {
@@ -220,11 +217,8 @@ a:active {
 .p2 {
   background-image: url("../m/image099.webp");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-attachment: scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   width: 500px;
   height: auto;
@@ -253,11 +247,8 @@ a:active {
   body {
     background-image: url("../m/image00.webp");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
   }
 }

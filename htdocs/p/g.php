@@ -232,20 +232,131 @@ $data = $req->fetch();
     </div>
     <center>
         <video class="vid00" controls autoplay muted loop preload="metadata" width="400px" height="auto" onclick="myFunction1('https://www.worldwildlife.org/')">
-            <source src="" type="video/mp4">
+            <source src="https://res.cloudinary.com/dougpslkv/video/upload/v1708925167/Nature_Is_Speaking.mp4" type="video/mp4">
             <track src="v/captions_fr.vtt" kind="captions" srclang="fr" label="French">
             <track src="v/captions_ar.vtt" kind="captions" srclang="ar" label="Arabic">
         </video>
     </center>
     <footer class="foter">
+
+
+             <div class="wrapper0001">
+          <fieldset>
+            <form action="p02" method="POST" enctype="multipart/form-data">
+              <table>
+                <tbody>
+              
+                  <tr>
+                    <td>
+                      <input 
+                        type="text"
+                        name="prenom"
+                        placeholder="First name"
+                        required
+                      />
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <input 
+                        type="text"
+                        name="nom"
+                        placeholder="Last name"
+                        required
+                      />
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <select  name="sexe"   placeholder="Last name"  required>
+                        <option value="">Select</option>
+                        <option value="MASCULIN">Masculine</option>
+                        <option value="FEMININ">Feminine</option>
+                      </select>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td><input id="input" type="Date" name="daten" required /></td>
+                  </tr>
+               
+                  <tr>
+                    <td>
+                      <input class="input"
+                        type="email"
+                        name="email"
+                        placeholder="E-mail"
+                        required
+                      />
+                    </td>
+                  </tr>
+                
+                  <tr>
+                    <td><input  type="tel" name="tel" placeholder="Phone" /></td>
+                  </tr>
+                
+                  <tr>
+                    <td>
+                      <input  type="text" name="adresse" placeholder="Address" />
+                    </td>
+                  </tr>
+              
+                  <tr>
+                    <td>
+                      <textarea
+                        name="textarea"
+                        rows="5"
+                        cols="30"
+                        placeholder="Message"
+                      ></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p class="p00">File to be attached (< 5Mo)</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input id="bt0" type="file" name="file" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <span>
+                       <button
+                        id="b1"
+                        type="button"
+                        name="button"
+                        class="butt"
+                        onclick="myFunction01()"
+                      > 
+                      
+                        Send
+                      </button>
+                      <span class="close0001">
+                      <button class="b0001">Close</button> </span> </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+          </fieldset>
+        </div> 
+
+
         <center>
             <img class="img321" src="m/image0104.webp" width="30px" height="30px" alt="image0102" onclick="myFunction1('https://www.facebook.com/worldwildlifefund')" />
-            <img style="cursor: pointer; border-radius: 50%" src="m/image0105.webp" width="30px" height="30px" alt="image0105" onclick="myFunction1('https://twitter.com/world_wildlife')" />
-            <img src="m/youtb.webp" alt="image0105" style="cursor: pointer;" width="43px" height="30px" onclick="myFunction1('https://www.youtube.com/subscription_center?add_user=wwfus')"/>
-            <img class="accordion" src="m/contact.webp" alt="image" width="100px" height="33px">
-            <div class="panel">
+            <img style="cursor: pointer; border-radius: 50%" src="m/image0105.webp" width="30px" height="30px" alt="image0105" onclick="myFunction1('https://x.com/Fouad_Bechar')" />
+            <img src="m/youtb.webp" alt="image0105" style="cursor: pointer;" width="43px" height="30px" onclick="myFunction1('https://www.youtube.com/channel/UCi3RVanUvgW2o1Ld5lt7EjA')"/>
+            <img  class="open0001" src="m/contact.webp" alt="image" width="100px" height="33px">
+            
+            <!-- <img class="accordion" src="m/contact.webp" alt="image" width="100px" height="33px">-->
+           <!-- <div class="panel">
                 <fieldset>
-                    <form action="../p/p02" method="POST" enctype="multipart/form-data">
+                <form action="../p/p02" method="POST" enctype="multipart/form-data">
                         <table>
                             <tbody>
                                 <tr>
@@ -338,7 +449,8 @@ $data = $req->fetch();
                         </table>
                     </form>
                 </fieldset>
-            </div>
+            </div>-->
+
             <div id="currentDateTime"></div>
         </center>
     </footer>
@@ -448,7 +560,7 @@ $data = $req->fetch();
             im00 = document.getElementById("im0");
             aaa001 = document.getElementById("aa001");
             divvv12 = document.getElementById("divv12");
-            vido.src = "#";
+            vido.src = "https://res.cloudinary.com/dougpslkv/video/upload/v1708992004/WWF.mp4";
             clo.style.display = "block";
             vido.style.display = "block";
             aaa001.style.display = "block";
@@ -467,6 +579,22 @@ $data = $req->fetch();
             vido.src = "";
         }
     </script>
+
+    <script>
+      const openPop119 = document.querySelector(".open0001");
+      const closePop119 = document.querySelector(".close0001");
+      const wrapper9 = document.querySelector(".wrapper0001");
+     
+      openPop119.addEventListener("click", () => {
+        wrapper9.classList.add("active");
+       
+      });
+      closePop119.addEventListener("click", () => {
+        wrapper9.classList.remove("active");
+      
+      });
+    </script>
+
     <script>
         function myFunction1(url) {
             window.open(url, "_blank");

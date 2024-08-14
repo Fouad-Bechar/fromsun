@@ -20,6 +20,7 @@
   --zi-playbook-head: 2;
   --zi-playbook-edit-links: calc(var(--zi-playbook-head) + 1);
 }
+
 drb-dialog:not(:defined) {
   display: none;
 }
@@ -2452,7 +2453,7 @@ input[type="url"]::placeholder,
 input[type="tel"]::placeholder,
 .braintree-input::placeholder,
 .selectize-input::placeholder {
-  color: #9e9ea7;
+  color: black;
 }
 input[type="text"].temp-form-neue,
 input[type="number"].temp-form-neue,

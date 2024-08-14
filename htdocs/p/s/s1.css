@@ -7,11 +7,8 @@
   background-color: lightblue;
   background-image: url("../m/image0.webp");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 .body83 {
@@ -223,15 +220,15 @@ ul li:hover > a:after {
 }
 
 textarea {
-  background-color: black;
+  background-color: white;
   width: 350px;
-  color: white;
+  color: black;
   font-size: 15px;
   margin-top: 3px;
   padding-left: 10px;
 }
 
-fieldset {
+/* fieldset {
   background-color: #1fc8db;
   background-image: linear-gradient(
     140deg,
@@ -251,8 +248,44 @@ fieldset {
   align-self: baseline;
   outline-color: antiquewhite;
   outline-style: dotted;
-}
-
+} */
+ fieldset {
+        background-color: #1fc8db;
+        background-image: linear-gradient(
+          140deg,
+          #53aa53 0%,
+          #7082bc 50%,
+          #eadedb 75%
+        );
+        /* opacity: 0.95; */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        /* margin-bottom: 10px;
+        margin-top: 10px; */
+        overflow: auto;
+        align-self: baseline;
+        outline-color: antiquewhite;
+        outline-style: dotted;
+      }
+      
+      table {
+        padding: 10px;
+       
+      }
+      .b0001 {  width: 100px;
+    height: 30px;
+    background: red;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    /* margin-top: 10px; */
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease; }
+      .butt:active {
+        transform: scale(0.95);
+      }
 iframe {
   background-color: #1fc8db;
   background-image: linear-gradient(
@@ -386,7 +419,7 @@ a:active {
   box-shadow: 1px 1px 10px black;
 }
 .wrapper00 .title {
-  font-size: 25px;
+  font-size: 25px; 
   font-weight: 600;
   text-align: center;
   margin: auto;
@@ -1267,11 +1300,8 @@ a:active {
   left: 0;
   background-image: url("../m/image14.webp");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   overflow-y: hidden;
   transition: 0.5s;
@@ -1436,6 +1466,69 @@ a:active {
   overflow: visible;
   text-align: center;
   height: 5px;
+}
+   .open0001 {
+    margin-top: 3px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+      }
+ .wrapper0001 {
+        position: fixed;
+        top: 30px;
+        left: 50%;
+        z-index: 5;
+        transform: translate(-50%, 0%);
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        animation: startPop 0.5s ease-in-out;
+      }
+     
+      .wrapper0001.active {
+        z-index: 10000;
+        display: flex;
+      }
+
+       input {
+        height: 25px;
+        width: 250px;
+        color: black;
+        font-size: 15px;
+       
+        border-radius: 10px;
+        padding-left: 10px;
+        margin-top: 2px;
+        margin-bottom: 5px;
+      }
+
+      select {
+      
+        height: 25px;
+        width: 150px;
+        color: black;
+        padding-left: 10px;
+        font-size: 15px;
+        border-radius: 10px;
+        margin-bottom: 5px;
+      }
+
+       textarea {
+        color: black;
+        font-size: 15px;
+        margin-top: 1px;
+        padding-left: 10px;
+      } 
+      ::placeholder {
+  color: black;
+  opacity: 1; 
+}
+::-ms-input-placeholder { 
+  color: black;
+  opacity: 1; 
 }
 @media screen and (max-width: 800px) {
   .f13 {
@@ -1659,11 +1752,8 @@ a:active {
   .body1 {
     background-image: url("../m/image00.webp");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
   }
 }
@@ -1671,11 +1761,8 @@ a:active {
   .body83 {
     background-image: url("../m/image00.webp");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
   }
 }
@@ -1684,11 +1771,8 @@ a:active {
   .body1 {
     background-image: url("../m/image00.webp");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
   }
 }
@@ -1696,11 +1780,8 @@ a:active {
   .body83 {
     background-image: url("../m/image00.webp");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
   }
 }

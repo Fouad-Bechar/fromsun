@@ -21,7 +21,7 @@ if (isset($_POST['email']) && !empty($_POST['email'])) {
         $insert->execute(array($token_user, $token));
         if ($row) {
             $decryptml = openssl_decrypt($encryptml, "AES-256-CBC", $key3, 0, $iv3);
-            $link = "<a href=" . 'https://fromsun.byethost32.com/p/s2/v?u=' . base64_encode($token_user) . '&token=' . base64_encode($token) . " >" . " Click on the link to reset your password." . "</a>";
+            $link = "<a href=" . '#' . base64_encode($token_user) . '&token=' . base64_encode($token) . " >" . " Click on the link to reset your password." . "</a>";
             $subj = '#';
             $mail = new PHPMailer();
             $mail->isSMTP();

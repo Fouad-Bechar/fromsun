@@ -12,7 +12,7 @@ require_once __DIR__ . '/t/t1.php';
 $prenom01 = $nom01 = $sexe01 = $daten01 = $email01 = $tel01 = $adresse01 = $textarea01 = $fileName = $fileType = $fileData = $file = $fileSize = $position = $addData = $ip = $info = "";
 $ip = $_SERVER["REMOTE_ADDR"];
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "https://api.ipgeolocation.io/ipgeo?apiKey=b00d0d4286e74db3a61cb77c1ee8069f&ip=" . $ip);
+curl_setopt($ch, CURLOPT_URL, "#" . $ip);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 $info = curl_exec($ch);
 curl_close($ch);
@@ -20,10 +20,10 @@ $mesg = '#';
 $decryptpsw = openssl_decrypt($encryptpsw, "AES-256-CBC", $key1, 0, $iv1);
 $decryptnm = openssl_decrypt($encryptnm, "AES-256-CBC", $key2, 0, $iv2);
 $decryptml = openssl_decrypt($encryptml, "AES-256-CBC", $key3, 0, $iv3);
-$subj = 'Hello my friend';
+$subj = '#';
 $username = $decryptnm;
 $pasword = $decryptpsw;
-$database = new PDO("mysql:host=#; dbname=#; charset=utf8;", $username, $pasword);
+$database = new PDO("#; dbname=#; charset=utf8;", $username, $pasword);
 
 if (isset($_POST['button'])) {
   $prenom01 = $_POST["prenom"];
