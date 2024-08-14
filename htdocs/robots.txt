@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /p/
+Disallow: /b/
+Sitemap: https://fromsun.byethost32.com/sitemap.xml
